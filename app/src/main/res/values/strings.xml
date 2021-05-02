@@ -8,19 +8,20 @@
     <string name="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </string>
     <string name="job_name">Software Engineer</string>
     <string name="lorem_text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</string>
-    <string name="full_name">Lien<br/>Hiep Quoc</string>
+    <string name="full_name">Lien Hiep Quoc</string>
     <string name="work_exp">Work Experience</string>
     <string name="diploma">Computer Science Diploma</string>
     <string name="career_objective">Motivated Software Engineering senior student at the University of Information Technology. Passionate about solving problems, developing and launching new projects. Seeking beginner opportunities to enhance my knowledge, nurture my proactive mindset, and thrive in the field.</string>
     <string name="hard_skills">
-        &#8226; <b>Languages &amp; Scripting:</b><br/>Dart, JavaScript, HTML, CSS, C++, C#, Java, ...<br/>
-        &#8226; <b>Frameworks &amp; Libraries:</b><br/>Reactjs, Redux, Vuejs, Flutter, DirectX9, Android, React Native<br/>
-        &#8226; <b>Operating Systems:</b><br/>Windows and Linux<br/>
-        &#8226; <b>Databases:</b><br/>MS SQL, MySQL, SQLite<br/>
-        &#8226; <b>Analysis and Design Tools:</b><br/>diagrams.net (draw.io)<br/>
-        &#8226; <b>Methodologies:</b><br/>Agile, Scrum, Waterfall, ...<br/>
-        &#8226; <b>Other technologies and skills:</b><br/>Git, npm, UX/UI, ...
+        &#8226; <b>Languages &amp; Scripting:</b>\nDart, JavaScript, HTML, CSS, C++, C#, Java, ...\n
+        &#8226; <b>Frameworks &amp; Libraries:</b> \nReactjs, Redux, Vuejs, Flutter, DirectX9, Android, React Native\n
+        &#8226; <b>Operating Systems:</b>\nWindows and Linux\n
+        &#8226; <b>Databases:</b>\nMS SQL, MySQL, SQLite\n
+        &#8226; <b>Analysis and Design Tools:</b>\ndiagrams.net (draw.io)\n
+        &#8226; <b>Methodologies:</b>\nAgile, Scrum, Waterfall, ...\n
+        &#8226; <b>Other technologies and skills:</b>\nGit, npm, UX/UI, ...
     </string>
+    <string name="soft_skills_section">Soft Skills</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
