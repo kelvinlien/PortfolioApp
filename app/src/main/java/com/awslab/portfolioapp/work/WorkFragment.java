@@ -34,10 +34,8 @@ public class WorkFragment extends Fragment {
 
         // create a list of Work items
         items = new ArrayList<>();
-        items.add(new WorkItem("20 April 2013",getString(R.string.lorem_text)));
-        items.add(new WorkItem("20 May 2013",getString(R.string.lorem_text2)));
-        items.add(new WorkItem("25 July 2013",getString(R.string.lorem_text)));
-        items.add(new WorkItem("20 April 2013",getString(R.string.lorem_text2)));
+        items.add(new WorkItem("An Awesome Company | Present",getString(R.string.job_name),getString(R.string.lorem_text)));
+        items.add(new WorkItem("Real-Time Analytics (RTA)  | Sep 2019 - Feb 2020","Front-end Web Software Developer intern",getString(R.string.lorem_text2)));
 
         adapter = new WorkAdapter(items);
 

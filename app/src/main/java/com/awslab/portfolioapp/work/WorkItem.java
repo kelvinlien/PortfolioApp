@@ -6,8 +6,9 @@ public class WorkItem {
     private String jobTitle;
     private String description;
 
-    public WorkItem(String companyAndDuration, String description) {
+    public WorkItem(String companyAndDuration, String jobTitle, String description) {
         this.companyAndDuration = companyAndDuration;
+        this.jobTitle = jobTitle;
         this.description = description;
     }
 
