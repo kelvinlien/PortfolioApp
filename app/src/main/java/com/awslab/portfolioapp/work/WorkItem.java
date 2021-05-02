@@ -1,12 +1,14 @@
 package com.awslab.portfolioapp.work;
 
+import org.w3c.dom.Text;
+
 public class WorkItem {
 
     private String companyAndDuration;
     private String jobTitle;
-    private String description;
+    private CharSequence description;
 
-    public WorkItem(String companyAndDuration, String jobTitle, String description) {
+    public WorkItem(String companyAndDuration, String jobTitle, CharSequence description) {
         this.companyAndDuration = companyAndDuration;
         this.jobTitle = jobTitle;
         this.description = description;
@@ -31,11 +33,11 @@ public class WorkItem {
         this.jobTitle = jobTitle;
     }
 
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 }
