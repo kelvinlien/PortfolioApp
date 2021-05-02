@@ -53,17 +53,17 @@ public class MainActivity extends AppCompatActivity implements Callback {
 
     }
 
-    void setPortfoliofragment() {
+    void setProjectFragment() {
 
         getSupportFragmentManager().beginTransaction().replace(R.id.container,new ProjectFragment()).commit();
 
     }
 
-    void setTeamFragment () {
+    void setEducationFragment() {
         getSupportFragmentManager().beginTransaction().replace(R.id.container,new EducationFragment()).commit();
     }
 
-    void setCVFragment() {
+    void setWorkFragment() {
         getSupportFragmentManager().beginTransaction().replace(R.id.container,new WorkFragment()).commit();
     }
 
@@ -80,13 +80,12 @@ public class MainActivity extends AppCompatActivity implements Callback {
 
         switch (menuItems.get(i).getCode()) {
 
-            case MenuUtil.HOME_FRAGMENT_CODE : setHomeFragment();
+            case MenuUtil.WORK_FRAGMENT_CODE: setWorkFragment();
             break;
-            case MenuUtil.CV_FRAGMENT_CODE : setCVFragment();
+            case MenuUtil.EDUCATION_FRAGMENT_CODE: setEducationFragment();
             break;
-            case MenuUtil.TEAM_FRAGMENT_CODE: setTeamFragment();
-            break;
-            case MenuUtil.PORTFOLIO_FRAGMENT_CODE:setPortfoliofragment();
+            case MenuUtil.PROJECT_FRAGMENT_CODE:
+                setProjectFragment();
             break;
             default: setHomeFragment();
         }
