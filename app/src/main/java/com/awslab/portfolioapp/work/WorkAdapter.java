@@ -1,4 +1,4 @@
-package com.awslab.portfolioapp.cv;
+package com.awslab.portfolioapp.work;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,27 +12,27 @@ import com.awslab.portfolioapp.R;
 
 import java.util.List;
 
-public class CVAdapter extends RecyclerView.Adapter<CVAdapter.CVViewHolder> {
+public class WorkAdapter extends RecyclerView.Adapter<WorkAdapter.WorkViewHolder> {
 
 
-    List<CVItem> mdata;
+    List<WorkItem> mdata;
 
-    public CVAdapter(List<CVItem> mdata) {
+    public WorkAdapter(List<WorkItem> mdata) {
         this.mdata = mdata;
     }
 
     @NonNull
     @Override
-    public CVViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public WorkViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_cv,parent,false);
+                .inflate(R.layout.item_Work,parent,false);
 
-        return new CVViewHolder(view);
+        return new WorkViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CVViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull WorkViewHolder holder, int position) {
 
         holder.tvTitle.setText(mdata.get(position).getTitle());
         holder.tvDescription.setText(mdata.get(position).getDescription());
@@ -44,14 +44,14 @@ public class CVAdapter extends RecyclerView.Adapter<CVAdapter.CVViewHolder> {
         return mdata.size();
     }
 
-    public class CVViewHolder extends RecyclerView.ViewHolder {
+    public class WorkViewHolder extends RecyclerView.ViewHolder {
 
         TextView tvTitle,tvDescription;
 
-        public CVViewHolder(@NonNull View itemView) {
+        public WorkViewHolder(@NonNull View itemView) {
             super(itemView);
-            tvTitle = itemView.findViewById(R.id.item_cv_title);
-            tvDescription = itemView.findViewById(R.id.item_cv_desc);
+            tvTitle = itemView.findViewById(R.id.item_Work_title);
+            tvDescription = itemView.findViewById(R.id.item_Work_desc);
         }
     }
 }

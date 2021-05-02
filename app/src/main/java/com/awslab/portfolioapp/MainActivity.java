@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
-import com.awslab.portfolioapp.cv.CVFragment;
+import com.awslab.portfolioapp.work.WorkFragment;
 import com.awslab.portfolioapp.home.HomeFragment;
 import com.awslab.portfolioapp.portfolio.PortfolioFragment;
 import com.awslab.portfolioapp.sidemenu.Callback;
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements Callback {
     }
 
     void setCVFragment() {
-        getSupportFragmentManager().beginTransaction().replace(R.id.container,new CVFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container,new WorkFragment()).commit();
     }
 
 

@@ -1,4 +1,4 @@
-package com.awslab.portfolioapp.cv;
+package com.awslab.portfolioapp.work;
 
 
 import android.os.Bundle;
@@ -21,34 +21,34 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class CVFragment extends Fragment {
+public class WorkFragment extends Fragment {
 
-    RecyclerView RvCv;
-    CVAdapter adapter ;
-    List<CVItem> items;
+    RecyclerView RvWork;
+    WorkAdapter adapter ;
+    List<WorkItem> items;
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        RvCv = view.findViewById(R.id.recyclerview_cv);
+        RvWork = view.findViewById(R.id.recyclerview_work);
 
-        // create a list of cv items
+        // create a list of Work items
         items = new ArrayList<>();
-        items.add(new CVItem("20 April 2013",getString(R.string.lorem_text)));
-        items.add(new CVItem("20 May 2013",getString(R.string.lorem_text2)));
-        items.add(new CVItem("25 July 2013",getString(R.string.lorem_text)));
-        items.add(new CVItem("20 April 2013",getString(R.string.lorem_text2)));
+        items.add(new WorkItem("20 April 2013",getString(R.string.lorem_text)));
+        items.add(new WorkItem("20 May 2013",getString(R.string.lorem_text2)));
+        items.add(new WorkItem("25 July 2013",getString(R.string.lorem_text)));
+        items.add(new WorkItem("20 April 2013",getString(R.string.lorem_text2)));
 
-        adapter = new CVAdapter(items);
+        adapter = new WorkAdapter(items);
 
-        RvCv.setLayoutManager(new LinearLayoutManager(getContext()));
-        RvCv.setAdapter(adapter);
+        RvWork.setLayoutManager(new LinearLayoutManager(getContext()));
+        RvWork.setAdapter(adapter);
 
 
 
     }
 
-    public CVFragment() {
+    public WorkFragment() {
         // Required empty public constructor
     }
 
@@ -57,7 +57,7 @@ public class CVFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cv, container, false);
+        return inflater.inflate(R.layout.fragment_work, container, false);
     }
 
 }

@@ -1,16 +1,16 @@
-package com.awslab.portfolioapp.cv;
+package com.awslab.portfolioapp.work;
 
-public class CVItem {
+public class WorkItem {
 
     private String title;
     private String description;
 
-    public CVItem(String title, String description) {
+    public WorkItem(String title, String description) {
         this.title = title;
         this.description = description;
     }
 
-    public CVItem() {
+    public WorkItem() {
     }
 
     public String getTitle() {
