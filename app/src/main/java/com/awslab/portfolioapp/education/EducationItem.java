@@ -1,17 +1,17 @@
-package com.awslab.portfolioapp.team;
+package com.awslab.portfolioapp.education;
 
-public class TeamItem {
+public class EducationItem {
 
     private String name,desc;
     private int img ;
 
-    public TeamItem(String name, String desc, int img) {
+    public EducationItem(String name, String desc, int img) {
         this.name = name;
         this.desc = desc;
         this.img = img;
     }
 
-    public TeamItem() {
+    public EducationItem() {
     }
 
     public String getName() {

@@ -13,7 +13,7 @@ import com.awslab.portfolioapp.sidemenu.Callback;
 import com.awslab.portfolioapp.sidemenu.MenuAdapter;
 import com.awslab.portfolioapp.sidemenu.MenuItem;
 import com.awslab.portfolioapp.sidemenu.MenuUtil;
-import com.awslab.portfolioapp.team.TeamFragment;
+import com.awslab.portfolioapp.education.EducationFragment;
 
 import java.util.List;
 
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements Callback {
     }
 
     void setTeamFragment () {
-        getSupportFragmentManager().beginTransaction().replace(R.id.container,new TeamFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container,new EducationFragment()).commit();
     }
 
     void setCVFragment() {
