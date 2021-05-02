@@ -13,15 +13,24 @@
     <string name="diploma">Computer Science Diploma</string>
     <string name="career_objective">Motivated Software Engineering senior student at the University of Information Technology. Passionate about solving problems, developing and launching new projects. Seeking beginner opportunities to enhance my knowledge, nurture my proactive mindset, and thrive in the field.</string>
     <string name="hard_skills">
-        &#8226; <b>Languages &amp; Scripting:</b>\nDart, JavaScript, HTML, CSS, C++, C#, Java, ...\n
+        &#8226; <b>Languages &amp; Scripting:</b>\nDart, JavaScript, HTML, CSS, C++, C#, Java\n
         &#8226; <b>Frameworks &amp; Libraries:</b> \nReactjs, Redux, Vuejs, Flutter, DirectX9, Android, React Native\n
         &#8226; <b>Operating Systems:</b>\nWindows and Linux\n
         &#8226; <b>Databases:</b>\nMS SQL, MySQL, SQLite\n
         &#8226; <b>Analysis and Design Tools:</b>\ndiagrams.net (draw.io)\n
-        &#8226; <b>Methodologies:</b>\nAgile, Scrum, Waterfall, ...\n
-        &#8226; <b>Other technologies and skills:</b>\nGit, npm, UX/UI, ...
+        &#8226; <b>Methodologies:</b>\nAgile, Scrum, Waterfall\n
+        &#8226; <b>Other technologies and skills:</b>\nGit, npm, UX/UI
     </string>
     <string name="soft_skills_section">Soft Skills</string>
+    <string name="soft_skills">
+        &#8226; Teamwork and collaboration\n
+        &#8226; Problem solving\n
+        &#8226; Critical thinking\n
+        &#8226; Adaptability\n
+        &#8226; Empathy\n
+        &#8226; Creativity\n
+        &#8226; English\n
+    </string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

@@ -56,22 +56,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewJobName" />
 
-        <TextView
-            android:id="@+id/textViewSkillsSection"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:text="@string/skills_section"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewCareerObjective" />
 
         <TextView
             android:id="@+id/textViewHardSkillsSection"
@@ -79,16 +63,16 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
             android:lineSpacingExtra="8sp"
             android:text="@string/hard_skills_section"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewSkillsSection" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewCareerObjective" />
 
         <TextView
             android:id="@+id/textViewHardSkills"
@@ -96,7 +80,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:lineSpacingExtra="8sp"
@@ -109,20 +93,39 @@
 
         <TextView
 
-            android:id="@+id/textView9"
+            android:id="@+id/textViewSoftSkillsSection"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:lineSpacingExtra="8sp"
+            android:text="@string/soft_skills_section"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewHardSkills" />
+
+        <TextView
+            android:id="@+id/textViewSoftSkills"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
             android:lineSpacingExtra="8sp"
-            android:text="@string/lorem_text"
+            android:text="@string/soft_skills"
+            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewHardSkills" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewSoftSkillsSection" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
