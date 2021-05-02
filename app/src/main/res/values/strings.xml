@@ -68,6 +68,12 @@
     </string>
     <string name="gpa_title">GPA</string>
     <string name="gpa_description">7.84/10 (updating)</string>
+    <string name="highest_ranking_title">Highest Ranking</string>
+    <string name="highest_ranking_description">Top 3 Software Engineering class of 2017 (High Quality program)</string>
+    <string name="thesis_title">Thesis</string>
+    <string name="thesis_description">Thesis involves researching new technologies (Machine Learning, Data Science, …) and applying them to make a completed system (Product Recommender System).</string>
+    <string name="leadership_and_experiment_title">Leadership and Experiment</string>
+    <string name="leadership_and_experiment_description">Led several projects, tried adopting Scrum to manage recent game development project.</string>
 
 
 </resources>

@@ -49,13 +49,15 @@ public class EducationFragment extends Fragment {
         // create list of Education items
 
         EducationItem item = new EducationItem(getString(R.string.gpa_title),getString(R.string.gpa_description),R.drawable.gpa);
-        EducationItem item2 = new EducationItem("Ahmed Ali",getString(R.string.lorem_text2),R.drawable.uservoyager);
-        EducationItem item3 = new EducationItem("Islam Ahmed",getString(R.string.lorem_text2),R.drawable.userspace);
+        EducationItem item2 = new EducationItem(getString(R.string.highest_ranking_title),getString(R.string.highest_ranking_description),R.drawable.ranking);
+        EducationItem item3 = new EducationItem(getString(R.string.thesis_title),getString(R.string.thesis_description),R.drawable.thesis);
+        EducationItem item4 = new EducationItem(getString(R.string.leadership_and_experiment_title),getString(R.string.leadership_and_experiment_description),R.drawable.leadership);
 
         mdata = new ArrayList<>();
         mdata.add(item);
         mdata.add(item2);
         mdata.add(item3);
+        mdata.add(item4);
 
         // setup adapter and recyclerview
 
