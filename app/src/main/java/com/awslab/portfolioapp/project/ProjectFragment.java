@@ -53,7 +53,7 @@ public class ProjectFragment extends Fragment implements ProjectCallback {
 
 
 
-        mdata.add(new ProjectItem(R.drawable.project7));
+        mdata.add(new ProjectItem(R.drawable.castlevania, "New Project", "bla bla bla"));
         mdata.add(new ProjectItem(R.drawable.project3));
         mdata.add(new ProjectItem(R.drawable.project5));
         mdata.add(new ProjectItem(R.drawable.project5));
@@ -67,7 +67,7 @@ public class ProjectFragment extends Fragment implements ProjectCallback {
         projectAdapter = new ProjectAdapter(mdata,this);
 
         // setup grid recyclerview
-        rv_project.setLayoutManager(new GridLayoutManager(getActivity(),3));
+        rv_project.setLayoutManager(new GridLayoutManager(getActivity(),2));
         rv_project.setAdapter(projectAdapter);
 
     }

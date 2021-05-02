@@ -61,10 +61,6 @@
     <string name="major_and_duration">BE Software Engineering | Aug 2017 - Present</string>
     <string name="education_description">
         Expected Graduation Date: Aug 2021
-<!--        • GPA: 7.84/10 (updating)\n-->
-<!--        • Highest ranking: top 3 Software Engineering class of 2017 (High Quality program).\n-->
-<!--        • Thesis involves researching new technologies (Machine Learning, Data Science, …) and applying them to make a completed system (Product Recommender System).\n-->
-<!--        • Led several projects, tried adopting Scrum to manage recent game development project.-->
     </string>
     <string name="gpa_title">GPA</string>
     <string name="gpa_description">7.84/10 (updating)</string>

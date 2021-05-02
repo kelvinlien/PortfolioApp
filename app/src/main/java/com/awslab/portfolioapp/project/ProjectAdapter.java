@@ -39,8 +39,7 @@ public class ProjectAdapter extends RecyclerView.Adapter<ProjectAdapter.ProjectV
     @Override
     public void onBindViewHolder(@NonNull ProjectViewHolder holder, int position) {
 
-        Glide.with(holder.itemView.getContext()).load(mdata.get(position).getImage()).into(holder.imgport);
-
+        Glide.with(holder.itemView.getContext()).load(mdata.get(position).getImage()).into(holder.imgProj);
 
 
     }
@@ -52,13 +51,13 @@ public class ProjectAdapter extends RecyclerView.Adapter<ProjectAdapter.ProjectV
 
     public class ProjectViewHolder extends RecyclerView.ViewHolder {
 
-        ImageView imgport;
+        ImageView imgProj;
 
 
         public ProjectViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            imgport = itemView.findViewById(R.id.item_project_img);
+            imgProj = itemView.findViewById(R.id.item_project_img);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

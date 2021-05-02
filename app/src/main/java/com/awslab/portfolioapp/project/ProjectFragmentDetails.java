@@ -67,7 +67,10 @@ public class ProjectFragmentDetails extends BottomSheetDialogFragment {
     void loadProjectData(ProjectItem item) {
 
         Glide.with(getContext()).load(item.getImage()).into(imgProject);
-        // bind title and description ...
+        if(item.getTitle()!= null)
+            title.setText(item.getTitle());
+        if (item.getDescription() != null)
+            description.setText(item.getDescription());
 
     }
 

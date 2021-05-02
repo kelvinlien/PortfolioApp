@@ -5,7 +5,8 @@ import java.io.Serializable;
 public class ProjectItem implements Serializable {
 
     private int image;
-    private String title,description;
+    private String title;
+    private CharSequence description;
 
     public ProjectItem(){
     }
@@ -41,11 +42,11 @@ public class ProjectItem implements Serializable {
         this.title = title;
     }
 
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 }
