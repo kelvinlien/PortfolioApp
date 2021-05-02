@@ -82,6 +82,42 @@
         As a Software Engineering student, I\'ve done a wide range of projects on different platforms.\n
         Below are some <i>important projects</i> that I don\'t want you to miss.
     </string>
+    <string name="project_title_0">castlevania10d</string>
+    <string name="project_description_0">
+        <b>Description:</b> Castlevania game development project. Using DirectX SDK, we built the first level of the game from scratch. We also tried managing this project using Scrum board on Trello.\nCollege project | Nov 2020 - Jan 2021\n
+        <b>My responsibilities:</b>\n
+        • Define Stories, prioritize and manage backlog.\n
+        • Develop fundamental features, assist others in testing and fixing bugs.\n
+        • Host Scrum events.\n
+        <b>Technologies used:</b> DirectX, C++\n
+    </string>
+    <string name="project_title_1">ooda-frontend</string>
+    <string name="project_description_1">
+        <b>Description:</b> A web application that facilitates Human Resource management. This project is the user-facing part, with communication to the back-end for data, authentication, …\nCollege project | Oct 2019 - Dec 2019\n
+        <b>My responsibilities:</b>\n
+        • Support requirements gathering and planning.\n
+        • Develop UI.\n
+        • Handle and display data from back-end.\n
+        <b>Technologies used:</b> React, Material UI kit, Axios, React-router\n
+    </string>
+    <string name="project_title_2">Lories</string>
+    <string name="project_description_2">
+        <b>Description:</b> A mobile application that serves as a hub for people in a relationship with lots of potential features to be developed. It tracks your day-in-love, upcoming events, and stores memories of your love.\nCollege project | Oct 2020 - Jan 2021\n
+        <b>My responsibilities:</b>\n
+        • Assist planning and designing wireframe.\n
+        • Develop UI based on design.\n
+        • Implement BloC and SQFlite to handle data communication.\n
+        <b>Technologies used:</b> Flutter, BloC, SQFlite\n
+    </string>
+    <string name="project_title_3">Cinemaphile</string>
+    <string name="project_description_3">
+        <b>Description:</b> My first Android project. This is a movie application that allows people to search and read about movie plot, review points, cast, genre, … provided by two big movie databases.\nCollege project | Oct 2020 - Jan 2021\n
+        <b>My responsibilities:</b>\n
+        • Research API sources and acquire api keys.\n
+        • Decide what will be shown and develop layout.\n
+        • Handle and show data and image.\n
+        <b>Technologies used:</b> Java, Android Studio\n
+    </string>
 
 
 </resources>

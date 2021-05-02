@@ -53,15 +53,10 @@ public class ProjectFragment extends Fragment implements ProjectCallback {
 
 
 
-        mdata.add(new ProjectItem(R.drawable.castlevania, "New Project", "bla bla bla"));
-        mdata.add(new ProjectItem(R.drawable.project3));
-        mdata.add(new ProjectItem(R.drawable.project5));
-        mdata.add(new ProjectItem(R.drawable.project5));
-        mdata.add(new ProjectItem(R.drawable.project0));
-        mdata.add(new ProjectItem(R.drawable.project2));
-        mdata.add(new ProjectItem(R.drawable.project3));
-        mdata.add(new ProjectItem(R.drawable.project7));
-        mdata.add(new ProjectItem(R.drawable.project1));
+        mdata.add(new ProjectItem(R.drawable.castlevania, getString(R.string.project_title_0), getText(R.string.project_description_0)));
+        mdata.add(new ProjectItem(R.drawable.reactjs, getString(R.string.project_title_1), getText(R.string.project_description_1)));
+        mdata.add(new ProjectItem(R.drawable.lories, getString(R.string.project_title_2), getText(R.string.project_description_2)));
+        mdata.add(new ProjectItem(R.drawable.tmdblogo, getString(R.string.project_title_3), getText(R.string.project_description_3)));
 
 
         projectAdapter = new ProjectAdapter(mdata,this);

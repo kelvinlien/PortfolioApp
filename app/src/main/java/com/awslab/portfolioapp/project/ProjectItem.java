@@ -20,7 +20,7 @@ public class ProjectItem implements Serializable {
         this.title = title;
     }
 
-    public ProjectItem(int image, String title, String description) {
+    public ProjectItem(int image, String title, CharSequence description) {
         this.image = image;
         this.title = title;
         this.description = description;
