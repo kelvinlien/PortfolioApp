@@ -1,25 +1,25 @@
-package com.awslab.portfolioapp.portfolio;
+package com.awslab.portfolioapp.project;
 
 import java.io.Serializable;
 
-public class PortfolioItem implements Serializable {
+public class ProjectItem implements Serializable {
 
     private int image;
     private String title,description;
 
-    public PortfolioItem(){
+    public ProjectItem(){
     }
 
-    public PortfolioItem(int image) {
+    public ProjectItem(int image) {
         this.image = image;
     }
 
-    public PortfolioItem(int image, String title) {
+    public ProjectItem(int image, String title) {
         this.image = image;
         this.title = title;
     }
 
-    public PortfolioItem(int image, String title, String description) {
+    public ProjectItem(int image, String title, String description) {
         this.image = image;
         this.title = title;
         this.description = description;

@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".portfolio.PortfolioFragmentDetails"
+    tools:context=".project.ProjectFragmentDetails"
     >
 
 
     <ImageView
         android:scaleType="centerCrop"
-        android:id="@+id/portfolio_details_img"
+        android:id="@+id/project_details_img"
         android:layout_width="0dp"
         android:layout_height="248dp"
         android:src="@drawable/ic_launcher_background"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/portfolio_details_title"
+        android:id="@+id/project_details_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -29,10 +29,10 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/portfolio_details_img" />
+        app:layout_constraintTop_toBottomOf="@+id/project_details_img" />
 
     <TextView
-        android:id="@+id/portfolio_details_desc"
+        android:id="@+id/project_details_desc"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -47,6 +47,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/portfolio_details_title"
+        app:layout_constraintTop_toBottomOf="@+id/project_details_title"
         app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,7 +8,7 @@ import android.os.Bundle;
 
 import com.awslab.portfolioapp.work.WorkFragment;
 import com.awslab.portfolioapp.home.HomeFragment;
-import com.awslab.portfolioapp.portfolio.PortfolioFragment;
+import com.awslab.portfolioapp.project.ProjectFragment;
 import com.awslab.portfolioapp.sidemenu.Callback;
 import com.awslab.portfolioapp.sidemenu.MenuAdapter;
 import com.awslab.portfolioapp.sidemenu.MenuItem;
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements Callback {
 
     void setPortfoliofragment() {
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.container,new PortfolioFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container,new ProjectFragment()).commit();
 
     }
 

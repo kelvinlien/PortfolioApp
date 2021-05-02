@@ -1,10 +1,9 @@
-package com.awslab.portfolioapp.portfolio;
+package com.awslab.portfolioapp.project;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -14,12 +13,12 @@ import com.bumptech.glide.Glide;
 
 import java.util.List;
 
-public class PortfolioAdapter extends RecyclerView.Adapter<PortfolioAdapter.PortfolioViewHolder> {
+public class ProjectAdapter extends RecyclerView.Adapter<ProjectAdapter.ProjectViewHolder> {
 
-    List<PortfolioItem> mdata;
-    PortfolioCallback listener;
+    List<ProjectItem> mdata;
+    ProjectCallback listener;
 
-    public PortfolioAdapter(List<PortfolioItem> mdata,PortfolioCallback listener) {
+    public ProjectAdapter(List<ProjectItem> mdata, ProjectCallback listener) {
         this.mdata = mdata;
         this.listener = listener;
     }
@@ -27,18 +26,18 @@ public class PortfolioAdapter extends RecyclerView.Adapter<PortfolioAdapter.Port
 
     @NonNull
     @Override
-    public PortfolioViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ProjectViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_portfolio,parent,false) ;
+                .inflate(R.layout.item_project,parent,false) ;
 
-        return new PortfolioViewHolder(view);
+        return new ProjectViewHolder(view);
 
 
     }
 
     @Override
-    public void onBindViewHolder(@NonNull PortfolioViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ProjectViewHolder holder, int position) {
 
         Glide.with(holder.itemView.getContext()).load(mdata.get(position).getImage()).into(holder.imgport);
 
@@ -51,19 +50,19 @@ public class PortfolioAdapter extends RecyclerView.Adapter<PortfolioAdapter.Port
         return mdata.size();
     }
 
-    public class PortfolioViewHolder extends RecyclerView.ViewHolder {
+    public class ProjectViewHolder extends RecyclerView.ViewHolder {
 
         ImageView imgport;
 
 
-        public PortfolioViewHolder(@NonNull View itemView) {
+        public ProjectViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            imgport = itemView.findViewById(R.id.item_portfolio_img);
+            imgport = itemView.findViewById(R.id.item_project_img);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    listener.onPortfolioItemClick(getAdapterPosition());
+                    listener.onProjectItemClick(getAdapterPosition());
                 }
             });
 
