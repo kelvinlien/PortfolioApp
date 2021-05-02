@@ -81,6 +81,11 @@
         • Collaborator of Content and Learning Department at UEH\'s CFE.\n
         • Active MOOCs learner.
     </string>
+    <string name="project_image_description">Project Image</string>
+    <string name="project_section_description">
+        As a Software Engineering student, I\'ve done a wide range of projects on different platforms.\n
+        Below are some <i>important projects</i> that I don\'t want you to miss.
+    </string>
 
 
 </resources>
