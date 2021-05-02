@@ -38,7 +38,8 @@
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
-            android:text="Jhon Doe"
+            android:text="Placeholder"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/education_item_img"
             app:layout_constraintTop_toTopOf="parent" />
@@ -54,7 +55,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:lineSpacingExtra="8sp"
+        android:lineSpacingExtra="16sp"
         android:text="@string/lorem_text2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

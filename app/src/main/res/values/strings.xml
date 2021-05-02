@@ -74,6 +74,13 @@
     <string name="thesis_description">Thesis involves researching new technologies (Machine Learning, Data Science, …) and applying them to make a completed system (Product Recommender System).</string>
     <string name="leadership_and_experiment_title">Leadership and Experiment</string>
     <string name="leadership_and_experiment_description">Led several projects, tried adopting Scrum to manage recent game development project.</string>
+    <string name="additional_activities_title">Additional Activities</string>
+    <string name="additional_activities_description">
+        • Member of Content Department at UIT\'s Open English Club\n
+        • Member of Board of Directors at UIT\'s Table Tennis Club.\n
+        • Collaborator of Content and Learning Department at UEH\'s CFE.\n
+        • Active MOOCs learner.
+    </string>
 
 
 </resources>

@@ -52,12 +52,13 @@ public class EducationFragment extends Fragment {
         EducationItem item2 = new EducationItem(getString(R.string.highest_ranking_title),getString(R.string.highest_ranking_description),R.drawable.ranking);
         EducationItem item3 = new EducationItem(getString(R.string.thesis_title),getString(R.string.thesis_description),R.drawable.thesis);
         EducationItem item4 = new EducationItem(getString(R.string.leadership_and_experiment_title),getString(R.string.leadership_and_experiment_description),R.drawable.leadership);
-
+        EducationItem item5 = new EducationItem(getString(R.string.additional_activities_title),getString(R.string.additional_activities_description),R.drawable.activities);
         mdata = new ArrayList<>();
         mdata.add(item);
         mdata.add(item2);
         mdata.add(item3);
         mdata.add(item4);
+        mdata.add(item5);
 
         // setup adapter and recyclerview
 
