@@ -35,7 +35,7 @@ public class EducationAdapter extends RecyclerView.Adapter<EducationAdapter.Educ
     @Override
     public void onBindViewHolder(@NonNull EducationViewHolder holder, int position) {
 
-        holder.tv_name.setText(mdata.get(position).getName());
+        holder.tv_name.setText(mdata.get(position).getTitle());
         holder.tv_desc.setText(mdata.get(position).getDesc());
         holder.img.setImageResource(mdata.get(position).getImg());
 

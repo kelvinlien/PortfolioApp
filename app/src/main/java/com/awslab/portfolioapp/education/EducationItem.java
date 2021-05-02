@@ -2,11 +2,11 @@ package com.awslab.portfolioapp.education;
 
 public class EducationItem {
 
-    private String name,desc;
+    private String title,desc;
     private int img ;
 
-    public EducationItem(String name, String desc, int img) {
-        this.name = name;
+    public EducationItem(String title, String desc, int img) {
+        this.title = title;
         this.desc = desc;
         this.img = img;
     }
@@ -14,12 +14,12 @@ public class EducationItem {
     public EducationItem() {
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getDesc() {

@@ -66,6 +66,8 @@
 <!--        • Thesis involves researching new technologies (Machine Learning, Data Science, …) and applying them to make a completed system (Product Recommender System).\n-->
 <!--        • Led several projects, tried adopting Scrum to manage recent game development project.-->
     </string>
+    <string name="gpa_title">GPA</string>
+    <string name="gpa_description">7.84/10 (updating)</string>
 
 
 </resources>

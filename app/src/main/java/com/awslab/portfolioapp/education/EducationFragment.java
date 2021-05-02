@@ -48,7 +48,7 @@ public class EducationFragment extends Fragment {
 
         // create list of Education items
 
-        EducationItem item = new EducationItem("Jhon Doe",getString(R.string.lorem_text2),R.drawable.user);
+        EducationItem item = new EducationItem(getString(R.string.gpa_title),getString(R.string.gpa_description),R.drawable.gpa);
         EducationItem item2 = new EducationItem("Ahmed Ali",getString(R.string.lorem_text2),R.drawable.uservoyager);
         EducationItem item3 = new EducationItem("Islam Ahmed",getString(R.string.lorem_text2),R.drawable.userspace);
 
