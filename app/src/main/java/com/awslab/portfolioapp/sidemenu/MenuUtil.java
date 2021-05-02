@@ -18,8 +18,8 @@ public class MenuUtil  {
         List<MenuItem> list = new ArrayList<>();
         // first menu item is selected
         list.add(new MenuItem(R.drawable.ic_baseline_home_24,HOME_FRAGMENT_CODE,true));
-        list.add(new MenuItem(R.drawable.ic_baseline_school_24,CV_FRAGMENT_CODE,false));
-        list.add(new MenuItem(R.drawable.ic_baseline_group_24,TEAM_FRAGMENT_CODE,false));
+        list.add(new MenuItem(R.drawable.ic_baseline_work_24,CV_FRAGMENT_CODE,false));
+        list.add(new MenuItem(R.drawable.ic_baseline_school_24,TEAM_FRAGMENT_CODE,false));
         list.add(new MenuItem(R.drawable.ic_baseline_dashboard_24,PORTFOLIO_FRAGMENT_CODE,false));
 
         return list;
