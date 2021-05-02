@@ -56,6 +56,9 @@
         &#8226; Redesigned the UI of the form-builder project.\n
         &#8226; Identified and fixed a bug which prevent the importing of exported data.
     </string>
+    <string name="education">Education</string>
+    <string name="university">University of Information Technology - VNU HCM</string>
+    <string name="major_and_duration">BE Software Engineering | Aug 2017 - Present</string>
 
 
 </resources>
