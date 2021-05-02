@@ -3,7 +3,7 @@ package com.awslab.portfolioapp.work;
 public class WorkItem {
 
     private String companyAndDuration;
-    private String position;
+    private String jobTitle;
     private String description;
 
     public WorkItem(String companyAndDuration, String description) {
@@ -22,12 +22,12 @@ public class WorkItem {
         this.companyAndDuration = companyAndDuration;
     }
 
-    public String getPosition() {
-        return position;
+    public String getJobTitle() {
+        return jobTitle;
     }
 
-    public void setPosition(String position) {
-        this.position = position;
+    public void setJobTitle(String jobTitle) {
+        this.jobTitle = jobTitle;
     }
 
     public String getDescription() {

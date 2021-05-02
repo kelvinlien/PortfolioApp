@@ -35,6 +35,7 @@ public class WorkAdapter extends RecyclerView.Adapter<WorkAdapter.WorkViewHolder
     public void onBindViewHolder(@NonNull WorkViewHolder holder, int position) {
 
         holder.tvCompanyAndDuration.setText(mdata.get(position).getCompanyAndDuration());
+        holder.tvJobTitle.setText(mdata.get(position).getJobTitle());
         holder.tvDescription.setText(mdata.get(position).getDescription());
 
     }
@@ -46,12 +47,12 @@ public class WorkAdapter extends RecyclerView.Adapter<WorkAdapter.WorkViewHolder
 
     public class WorkViewHolder extends RecyclerView.ViewHolder {
 
-        TextView tvCompanyAndDuration,tvPosition, tvDescription;
+        TextView tvCompanyAndDuration, tvJobTitle, tvDescription;
 
         public WorkViewHolder(@NonNull View itemView) {
             super(itemView);
             tvCompanyAndDuration = itemView.findViewById(R.id.item_company_and_duration);
-            tvPosition = itemView.findViewById(R.id.item_position);
+            tvJobTitle = itemView.findViewById(R.id.item_job_title);
             tvDescription = itemView.findViewById(R.id.item_work_desc);
         }
     }
