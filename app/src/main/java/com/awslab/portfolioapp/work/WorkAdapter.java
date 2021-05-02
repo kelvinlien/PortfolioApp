@@ -26,7 +26,7 @@ public class WorkAdapter extends RecyclerView.Adapter<WorkAdapter.WorkViewHolder
     public WorkViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_Work,parent,false);
+                .inflate(R.layout.item_work,parent,false);
 
         return new WorkViewHolder(view);
     }
@@ -34,7 +34,7 @@ public class WorkAdapter extends RecyclerView.Adapter<WorkAdapter.WorkViewHolder
     @Override
     public void onBindViewHolder(@NonNull WorkViewHolder holder, int position) {
 
-        holder.tvTitle.setText(mdata.get(position).getTitle());
+        holder.tvCompanyAndDuration.setText(mdata.get(position).getCompanyAndDuration());
         holder.tvDescription.setText(mdata.get(position).getDescription());
 
     }
@@ -46,12 +46,13 @@ public class WorkAdapter extends RecyclerView.Adapter<WorkAdapter.WorkViewHolder
 
     public class WorkViewHolder extends RecyclerView.ViewHolder {
 
-        TextView tvTitle,tvDescription;
+        TextView tvCompanyAndDuration,tvPosition, tvDescription;
 
         public WorkViewHolder(@NonNull View itemView) {
             super(itemView);
-            tvTitle = itemView.findViewById(R.id.item_Work_title);
-            tvDescription = itemView.findViewById(R.id.item_Work_desc);
+            tvCompanyAndDuration = itemView.findViewById(R.id.item_company_and_duration);
+            tvPosition = itemView.findViewById(R.id.item_position);
+            tvDescription = itemView.findViewById(R.id.item_work_desc);
         }
     }
 }

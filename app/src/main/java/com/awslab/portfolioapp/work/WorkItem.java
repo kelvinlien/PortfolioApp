@@ -2,23 +2,32 @@ package com.awslab.portfolioapp.work;
 
 public class WorkItem {
 
-    private String title;
+    private String companyAndDuration;
+    private String position;
     private String description;
 
-    public WorkItem(String title, String description) {
-        this.title = title;
+    public WorkItem(String companyAndDuration, String description) {
+        this.companyAndDuration = companyAndDuration;
         this.description = description;
     }
 
     public WorkItem() {
     }
 
-    public String getTitle() {
-        return title;
+    public String getCompanyAndDuration() {
+        return companyAndDuration;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setCompanyAndDuration(String companyAndDuration) {
+        this.companyAndDuration = companyAndDuration;
+    }
+
+    public String getPosition() {
+        return position;
+    }
+
+    public void setPosition(String position) {
+        this.position = position;
     }
 
     public String getDescription() {
