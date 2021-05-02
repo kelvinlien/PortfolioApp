@@ -13,23 +13,23 @@
     <string name="diploma">Computer Science Diploma</string>
     <string name="career_objective">Motivated Software Engineering senior student at the University of Information Technology. Passionate about solving problems, developing and launching new projects. Seeking beginner opportunities to enhance my knowledge, nurture my proactive mindset, and thrive in the field.</string>
     <string name="hard_skills">
-        &#8226; <b>Languages &amp; Scripting:</b>\nDart, JavaScript, HTML, CSS, C++, C#, Java\n
-        &#8226; <b>Frameworks &amp; Libraries:</b> \nReactjs, Redux, Vuejs, Flutter, DirectX9, Android, React Native\n
-        &#8226; <b>Operating Systems:</b>\nWindows and Linux\n
-        &#8226; <b>Databases:</b>\nMS SQL, MySQL, SQLite\n
-        &#8226; <b>Analysis and Design Tools:</b>\ndiagrams.net (draw.io)\n
-        &#8226; <b>Methodologies:</b>\nAgile, Scrum, Waterfall\n
-        &#8226; <b>Other technologies and skills:</b>\nGit, npm, UX/UI
+        • <b>Languages &amp; Scripting:</b>\nDart, JavaScript, HTML, CSS, C++, C#, Java\n
+        • <b>Frameworks &amp; Libraries:</b> \nReactjs, Redux, Vuejs, Flutter, DirectX9, Android, React Native\n
+        • <b>Operating Systems:</b>\nWindows and Linux\n
+        • <b>Databases:</b>\nMS SQL, MySQL, SQLite\n
+        • <b>Analysis and Design Tools:</b>\ndiagrams.net (draw.io)\n
+        • <b>Methodologies:</b>\nAgile, Scrum, Waterfall\n
+        • <b>Other technologies and skills:</b>\nGit, npm, UX/UI
     </string>
     <string name="soft_skills_section">Soft Skills</string>
     <string name="soft_skills">
-        &#8226; Teamwork and collaboration\n
-        &#8226; Problem solving\n
-        &#8226; Critical thinking\n
-        &#8226; Adaptability\n
-        &#8226; Empathy\n
-        &#8226; Creativity\n
-        &#8226; English\n
+        • Teamwork and collaboration\n
+        • Problem solving\n
+        • Critical thinking\n
+        • Adaptability\n
+        • Empathy\n
+        • Creativity\n
+        • English\n
     </string>
 
     <!-- TODO: Remove or change this placeholder text -->
@@ -42,23 +42,30 @@
     <string name="company_and_duration_next">An Awesome Company | Present</string>
     <string name="work_description_next">
         <b>Expectation:</b>\n
-        &#8226; Working on challenging, interesting product which is being used worldwide\n
-        &#8226; Be involved in the complete project lifecycle, from requirements to final delivery\n
-        &#8226; Enhance knowledge, develop new skills and have fun\n
+        • Working on challenging, interesting product which is being used worldwide\n
+        • Be involved in the complete project lifecycle, from requirements to final delivery\n
+        • Enhance knowledge, develop new skills and have fun\n
     </string>
     <string name="work_description_0">
         <b>Key Responsibility</b>\n
-        &#8226; Supported RTA web application development, testing and maintenance.\n
-        &#8226; Collaborated on RTA main products.\n
-        &#8226; Managed and refined an incubation form-builder project.\n
-        &#8226; Verified that software met requirements.\n
+        • Supported RTA web application development, testing and maintenance.\n
+        • Collaborated on RTA main products.\n
+        • Managed and refined an incubation form-builder project.\n
+        • Verified that software met requirements.\n
         <b>Key Achievement</b>\n
-        &#8226; Redesigned the UI of the form-builder project.\n
-        &#8226; Identified and fixed a bug which prevent the importing of exported data.
+        • Redesigned the UI of the form-builder project.\n
+        • Identified and fixed a bug which prevent the importing of exported data.
     </string>
     <string name="education">Education</string>
     <string name="university">University of Information Technology - VNU HCM</string>
     <string name="major_and_duration">BE Software Engineering | Aug 2017 - Present</string>
+    <string name="education_description">
+        Expected Graduation Date: Aug 2021
+<!--        • GPA: 7.84/10 (updating)\n-->
+<!--        • Highest ranking: top 3 Software Engineering class of 2017 (High Quality program).\n-->
+<!--        • Thesis involves researching new technologies (Machine Learning, Data Science, …) and applying them to make a completed system (Product Recommender System).\n-->
+<!--        • Led several projects, tried adopting Scrum to manage recent game development project.-->
+    </string>
 
 
 </resources>
