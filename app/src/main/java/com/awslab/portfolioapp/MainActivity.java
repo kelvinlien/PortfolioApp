@@ -1,10 +1,13 @@
 package com.awslab.portfolioapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.awslab.portfolioapp.work.WorkFragment;
 import com.awslab.portfolioapp.home.HomeFragment;
@@ -35,7 +38,15 @@ public class MainActivity extends AppCompatActivity implements Callback {
 
         // set the default fragment when activity launch
         setHomeFragment();
+        View switchButton = findViewById(R.id.UIModeSwitchButton);
+        switchButton.setOnClickListener(new View.OnClickListener(){
 
+                                            @Override
+                                            public void onClick(View v) {
+                                                v.setX(v.getX() + 100);
+                                            }
+                                        }
+        );
 
 
     }
@@ -87,9 +98,6 @@ public class MainActivity extends AppCompatActivity implements Callback {
             case MenuUtil.PROJECT_FRAGMENT_CODE:
                 setProjectFragment();
             break;
-            case MenuUtil.SWITCH_MODE_CODE:
-                // call dark mode function here
-                break;
             default: setHomeFragment();
         }
 

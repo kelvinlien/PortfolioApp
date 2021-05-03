@@ -3,9 +3,24 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">#ffffff</item>
+        <item name="colorPrimaryDark">#ffffff</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundColor">#ffffff</item>
+        <item name="cardBackgroundColor">#fbfbfb</item>
+        <item name="textColor">#808080</item>
+        <item name="buttonColor">#ffffff</item>
+    </style>
+
+    <style name="AppThemeDark" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#212121</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundColor">#303030</item>
+        <item name="cardBackgroundColor">#424242</item>
+        <item name="textColor">#ffffff</item>
+        <item name="buttonColor">#2196F3</item>
     </style>
 
 </resources>
