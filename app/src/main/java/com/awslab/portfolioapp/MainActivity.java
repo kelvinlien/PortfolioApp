@@ -20,6 +20,7 @@ import com.awslab.portfolioapp.education.EducationFragment;
 
 import java.util.List;
 
+
 public class MainActivity extends AppCompatActivity implements Callback {
 
     RecyclerView menuRv;
@@ -29,6 +30,14 @@ public class MainActivity extends AppCompatActivity implements Callback {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        boolean darkTheme = false;
+        if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES)
+        {
+            darkTheme = true;
+            setTheme(R.style.AppThemeDark);
+        }
+        else
+            setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
@@ -38,12 +47,29 @@ public class MainActivity extends AppCompatActivity implements Callback {
 
         // set the default fragment when activity launch
         setHomeFragment();
-        View switchButton = findViewById(R.id.UIModeSwitchButton);
+        Button switchButton = findViewById(R.id.UIModeSwitchButton);
+        if (darkTheme)
+        {
+            switchButton.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_baseline_wb_sunny_24, 0, 0, 0);
+        }
+        else
+        {
+            switchButton.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_baseline_nights_stay_24, 0, 0, 0);
+        }
+        final boolean finalDarkTheme = darkTheme;
         switchButton.setOnClickListener(new View.OnClickListener(){
 
                                             @Override
                                             public void onClick(View v) {
-                                                v.setX(v.getX() + 100);
+                                                if (finalDarkTheme)
+                                                {
+                                                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                                                }
+                                                else
+                                                {
+                                                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                                                }
+                                                recreate();
                                             }
                                         }
         );
