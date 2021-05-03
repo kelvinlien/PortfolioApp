@@ -11,6 +11,7 @@ public class MenuUtil  {
     public static final int WORK_FRAGMENT_CODE = 1;
     public static final int PROJECT_FRAGMENT_CODE = 2;
     public static final int EDUCATION_FRAGMENT_CODE = 3;
+    public static final int SWITCH_MODE_CODE = -1;
 
 
     public static List<MenuItem> getMenuList() {
@@ -21,6 +22,7 @@ public class MenuUtil  {
         list.add(new MenuItem(R.drawable.ic_baseline_work_24, WORK_FRAGMENT_CODE,false));
         list.add(new MenuItem(R.drawable.ic_baseline_school_24, EDUCATION_FRAGMENT_CODE,false));
         list.add(new MenuItem(R.drawable.ic_baseline_dashboard_24, PROJECT_FRAGMENT_CODE,false));
+        list.add(new MenuItem(R.drawable.ic_baseline_nights_stay_24, SWITCH_MODE_CODE,false));
 
         return list;
 

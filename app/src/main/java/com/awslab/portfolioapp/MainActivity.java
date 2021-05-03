@@ -87,6 +87,9 @@ public class MainActivity extends AppCompatActivity implements Callback {
             case MenuUtil.PROJECT_FRAGMENT_CODE:
                 setProjectFragment();
             break;
+            case MenuUtil.SWITCH_MODE_CODE:
+                // call dark mode function here
+                break;
             default: setHomeFragment();
         }
 
