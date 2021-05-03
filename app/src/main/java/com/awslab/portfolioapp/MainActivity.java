@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatDelegate;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements Callback {
         }
         else
             setTheme(R.style.AppTheme);
-        super.onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState != null ? savedInstanceState : getIntent().getBundleExtra("saved_state"));
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
 
@@ -69,12 +70,23 @@ public class MainActivity extends AppCompatActivity implements Callback {
                                                 {
                                                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
                                                 }
-                                                recreate();
+//                                                recreate();
+                                                transitionRecreate();
                                             }
                                         }
         );
 
 
+    }
+
+    protected void transitionRecreate(){
+        Bundle bundle = new Bundle();
+        onSaveInstanceState(bundle);
+        Intent intent = new Intent(this, getClass());
+        intent.putExtra("saved_state", bundle);
+        finish();
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+        startActivity(intent);
     }
 
     private void setupSideMenu() {
