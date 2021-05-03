@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/team_card_bg"
+    android:background="?attr/cardBackgroundColor"
     android:layout_marginTop="8dp">
 
     <LinearLayout
