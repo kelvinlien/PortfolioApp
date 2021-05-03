@@ -8,10 +8,15 @@ I want to take this project as a chance to review my Android development knowled
 
 ## Features
 
-- [x] Sidebar for distributed information (not gonna bore you with loads of lines)
+**NEW**: additional features I develop for my portfolio version.
 
-- [ ] Dark mode (of course)
+- [x] Home section
+- [x] Education section
+- [x] Work section
+- [x] Project section
+- [x] Dark mode (of course) **NEW**
 - [ ] A Google Map showing my home (last resort for shippers, or when you don't want to deal with District 12 address rule)
+- [ ] Contact section that opens other applications for faster connection.
 
 ...
 
