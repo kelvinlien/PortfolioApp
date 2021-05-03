@@ -17,6 +17,7 @@
         android:text="@string/professional_experience"
         android:textSize="24sp"
         android:textStyle="bold"
+        android:textColor="?attr/textColor"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
