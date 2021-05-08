@@ -9,6 +9,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import com.awslab.portfolioapp.work.WorkFragment;
 import com.awslab.portfolioapp.home.HomeFragment;
@@ -48,14 +50,14 @@ public class MainActivity extends AppCompatActivity implements Callback {
 
         // set the default fragment when activity launch
         setHomeFragment();
-        Button switchButton = findViewById(R.id.UIModeSwitchButton);
+        ImageView switchButton = findViewById(R.id.UIModeSwitchButton);
         if (darkTheme)
         {
-            switchButton.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_baseline_wb_sunny_24, 0, 0, 0);
+            switchButton.setImageResource(R.drawable.ic_baseline_wb_sunny_24);
         }
         else
         {
-            switchButton.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_baseline_nights_stay_24, 0, 0, 0);
+            switchButton.setImageResource(R.drawable.ic_baseline_nights_stay_24);
         }
         final boolean finalDarkTheme = darkTheme;
         switchButton.setOnClickListener(new View.OnClickListener(){

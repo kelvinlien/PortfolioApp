@@ -39,7 +39,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/userspace" />
 
-    <Button
+    <ImageView
         android:id="@+id/UIModeSwitchButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -47,10 +47,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/container"
         app:layout_constraintStart_toStartOf="parent"
-        android:drawableStart="@drawable/ic_baseline_nights_stay_24"
-        android:drawableLeft="@drawable/ic_baseline_nights_stay_24">
+        android:src="@drawable/ic_baseline_nights_stay_24">
 
-    </Button>
+    </ImageView>
 
 
 
