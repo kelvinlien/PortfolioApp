@@ -17,7 +17,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/rv_side_menu"
-        app:layout_constraintTop_toTopOf="parent"></FrameLayout>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_side_menu"
@@ -37,7 +37,8 @@
         app:layout_constraintEnd_toStartOf="@+id/container"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/userspace" />
+        app:srcCompat="@drawable/userspace"
+        android:contentDescription="Profile picture" />
 
     <ImageView
         android:id="@+id/UIModeSwitchButton"
@@ -47,7 +48,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/container"
         app:layout_constraintStart_toStartOf="parent"
-        android:src="@drawable/ic_baseline_nights_stay_24">
+        android:src="@drawable/ic_baseline_nights_stay_24"
+        android:tint="@color/icon_tint_light"
+        android:contentDescription="switch button">
 
     </ImageView>
 

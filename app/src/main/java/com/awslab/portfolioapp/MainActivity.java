@@ -72,7 +72,6 @@ public class MainActivity extends AppCompatActivity implements Callback {
                                                 {
                                                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
                                                 }
-//                                                recreate();
                                                 transitionRecreate();
                                             }
                                         }
