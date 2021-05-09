@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="?attr/backgroundColor">
+    android:background="?attr/backgroundColor"
+    tools:context=".MainActivity">
 
 
     <FrameLayout
@@ -24,9 +24,9 @@
         android:layout_width="52dp"
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/UIModeSwitchButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintBottom_toTopOf="@+id/UIModeSwitchButton"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
@@ -34,27 +34,25 @@
         android:layout_width="36dp"
         android:layout_height="36dp"
         android:layout_marginTop="16dp"
+        android:contentDescription="Profile picture"
         app:layout_constraintEnd_toStartOf="@+id/container"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/userspace"
-        android:contentDescription="Profile picture" />
+        app:srcCompat="@drawable/userspace" />
 
     <ImageView
         android:id="@+id/UIModeSwitchButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/container"
-        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="switch button"
         android:src="@drawable/ic_baseline_nights_stay_24"
         android:tint="@color/icon_tint_light"
-        android:contentDescription="switch button">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/container"
+        app:layout_constraintStart_toStartOf="parent">
 
     </ImageView>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

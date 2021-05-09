@@ -1,15 +1,14 @@
 package com.awslab.portfolioapp.project;
 
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import com.awslab.portfolioapp.R;
 import com.bumptech.glide.Glide;
@@ -19,14 +18,12 @@ public class ProjectFragmentDetails extends BottomSheetDialogFragment {
 
 
     private ImageView imgProject;
-    private TextView title,description;
-
+    private TextView title, description;
 
 
     public ProjectFragmentDetails() {
         // Required empty public constructor
     }
-
 
 
     @Override
@@ -61,13 +58,12 @@ public class ProjectFragmentDetails extends BottomSheetDialogFragment {
         loadProjectData(item);
 
 
-
     }
 
     void loadProjectData(ProjectItem item) {
 
         Glide.with(getContext()).load(item.getImage()).into(imgProject);
-        if(item.getTitle()!= null)
+        if (item.getTitle() != null)
             title.setText(item.getTitle());
         if (item.getDescription() != null)
             description.setText(item.getDescription());

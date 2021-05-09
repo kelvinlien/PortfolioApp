@@ -2,8 +2,8 @@ package com.awslab.portfolioapp.education;
 
 public class EducationItem {
 
-    private String title,desc;
-    private int img ;
+    private String title, desc;
+    private int img;
 
     public EducationItem(String title, String desc, int img) {
         this.title = title;

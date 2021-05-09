@@ -8,7 +8,7 @@ public class ProjectItem implements Serializable {
     private String title;
     private CharSequence description;
 
-    public ProjectItem(){
+    public ProjectItem() {
     }
 
     public ProjectItem(int image) {

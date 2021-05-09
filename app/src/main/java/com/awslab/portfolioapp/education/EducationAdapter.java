@@ -27,7 +27,7 @@ public class EducationAdapter extends RecyclerView.Adapter<EducationAdapter.Educ
     public EducationViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_education,parent,false);
+                .inflate(R.layout.item_education, parent, false);
 
         return new EducationViewHolder(view);
     }
@@ -40,8 +40,6 @@ public class EducationAdapter extends RecyclerView.Adapter<EducationAdapter.Educ
         holder.img.setImageResource(mdata.get(position).getImg());
 
 
-
-
     }
 
     @Override
@@ -51,13 +49,13 @@ public class EducationAdapter extends RecyclerView.Adapter<EducationAdapter.Educ
 
     public class EducationViewHolder extends RecyclerView.ViewHolder {
 
-        TextView tv_name,tv_desc;
+        TextView tv_name, tv_desc;
         ImageView img;
 
         public EducationViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            tv_name = itemView.findViewById(R.id.education_item_name) ;
+            tv_name = itemView.findViewById(R.id.education_item_name);
             tv_desc = itemView.findViewById(R.id.education_item_desc);
             img = itemView.findViewById(R.id.education_item_img);
         }

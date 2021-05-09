@@ -2,16 +2,15 @@ package com.awslab.portfolioapp.education;
 
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import com.awslab.portfolioapp.R;
 
@@ -48,11 +47,11 @@ public class EducationFragment extends Fragment {
 
         // create list of Education items
 
-        EducationItem item = new EducationItem(getString(R.string.gpa_title),getString(R.string.gpa_description),R.drawable.gpa);
-        EducationItem item2 = new EducationItem(getString(R.string.highest_ranking_title),getString(R.string.highest_ranking_description),R.drawable.ranking);
-        EducationItem item3 = new EducationItem(getString(R.string.thesis_title),getString(R.string.thesis_description),R.drawable.thesis);
-        EducationItem item4 = new EducationItem(getString(R.string.leadership_and_experiment_title),getString(R.string.leadership_and_experiment_description),R.drawable.leadership);
-        EducationItem item5 = new EducationItem(getString(R.string.additional_activities_title),getString(R.string.additional_activities_description),R.drawable.activities);
+        EducationItem item = new EducationItem(getString(R.string.gpa_title), getString(R.string.gpa_description), R.drawable.gpa);
+        EducationItem item2 = new EducationItem(getString(R.string.highest_ranking_title), getString(R.string.highest_ranking_description), R.drawable.ranking);
+        EducationItem item3 = new EducationItem(getString(R.string.thesis_title), getString(R.string.thesis_description), R.drawable.thesis);
+        EducationItem item4 = new EducationItem(getString(R.string.leadership_and_experiment_title), getString(R.string.leadership_and_experiment_description), R.drawable.leadership);
+        EducationItem item5 = new EducationItem(getString(R.string.additional_activities_title), getString(R.string.additional_activities_description), R.drawable.activities);
         mdata = new ArrayList<>();
         mdata.add(item);
         mdata.add(item2);

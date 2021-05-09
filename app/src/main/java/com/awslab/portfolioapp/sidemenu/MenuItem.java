@@ -2,7 +2,7 @@ package com.awslab.portfolioapp.sidemenu;
 
 public class MenuItem {
 
-    private int icon,code;
+    private int icon, code;
     private boolean isSelected;
 
     public MenuItem(int icon, int code) {

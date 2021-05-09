@@ -5,20 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/cardBackgroundColor"
-    tools:context=".project.ProjectFragmentDetails"
-    >
+    tools:context=".project.ProjectFragmentDetails">
 
 
     <ImageView
-        android:scaleType="centerCrop"
         android:id="@+id/project_details_img"
         android:layout_width="0dp"
         android:layout_height="248dp"
+        android:contentDescription="@string/project_image_description"
+        android:scaleType="centerCrop"
         android:src="@drawable/ic_launcher_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/project_image_description" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/project_details_title"
@@ -30,9 +29,9 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="Project Name"
+        android:textColor="?attr/textColor"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="?attr/textColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

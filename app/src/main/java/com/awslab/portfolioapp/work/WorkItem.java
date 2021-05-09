@@ -1,7 +1,5 @@
 package com.awslab.portfolioapp.work;
 
-import org.w3c.dom.Text;
-
 public class WorkItem {
 
     private String companyAndDuration;

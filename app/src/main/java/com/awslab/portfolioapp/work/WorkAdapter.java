@@ -26,7 +26,7 @@ public class WorkAdapter extends RecyclerView.Adapter<WorkAdapter.WorkViewHolder
     public WorkViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_work,parent,false);
+                .inflate(R.layout.item_work, parent, false);
 
         return new WorkViewHolder(view);
     }
